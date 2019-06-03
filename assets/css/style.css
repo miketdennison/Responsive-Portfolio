@@ -110,7 +110,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -217,13 +218,8 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-
-  .main-section {
-    width: 70%;
-  }
-
-  #main-container, #logo {
-    margin-left: 20px;
+  * {
+    overflow-x: hidden;
   }
 
   nav {
@@ -231,11 +227,44 @@ input[type=submit] {
     margin-top: 25px;
     margin-right: 26px;
   }
+
+  .main-section {
+    width: 70%;
+  }
+
+  .masthead {
+    width: 100%;
+  }
+
+  #main-container,
+  #logo {
+    margin-left: 20px;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
 
-}
-@media screen and (max-width: 640px) {
+  nav {
+    margin-right: 8%;
+  }
 
+  .masthead {
+    width: 100%;
+  }
+
+  .main-section {
+    width: 94%;
+  }
+
+  #logo {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
 }
+
+@media screen and (max-width: 640px) {}
